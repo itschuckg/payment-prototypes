@@ -1,0 +1,41 @@
+{
+  "site": {
+    "name": "The Payments Atlas",
+    "tagline": "An interactive showcase of Canadian municipal payment patterns",
+    "sandboxBanner": "Sandbox · Mocked provider · No real money moves · No real personal data"
+  },
+  "nav": {
+    "home": "Home",
+    "clerk": "Clerk dashboard",
+    "trust": "Trust & compliance",
+    "howItWorks": "How it works"
+  },
+  "footer": {
+    "neutralNote": "A vendor-neutral educational resource. Not a payment processor.",
+    "version": "v1 · Interac e-Transfer Request Money (mocked)"
+  },
+  "home": {
+    "heroEyebrow": "Pattern 1 of 5",
+    "heroTitle": "Interac e-Transfer Request Money",
+    "heroSubtitle": "The clerk-driven pay-by-link pattern. Citizen gets an SMS or email, taps a single link, authorizes inside their bank's app, and the bill reconciles automatically — without anyone typing a card number or guessing a memo field.",
+    "scenarioBadge": "Scenario",
+    "scenarioName": "Court fine via SMS link",
+    "scenarioDescription": "A municipal court clerk sends a payable link to a citizen for an unpaid traffic ticket. The citizen pays from their own banking app. The fine is marked paid in the clerk dashboard within seconds.",
+    "tryBillerCta": "Open the biller's view",
+    "tryPayerCta": "Preview the payer's view",
+    "learnTrustCta": "Read the compliance posture",
+    "learnHowCta": "See how the protocol works"
+  },
+  "clerk": {
+    "stub": "Clerk dashboard — coming in the next commit."
+  },
+  "pay": {
+    "stub": "Citizen pay-by-link page — coming in the next commit."
+  },
+  "trust": {
+    "stub": "Trust & compliance landscape — coming in the next commit."
+  },
+  "howItWorks": {
+    "stub": "Protocol walkthrough — coming in the next commit."
+  }
+}
