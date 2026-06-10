@@ -27,7 +27,56 @@
     "learnHowCta": "See how the protocol works"
   },
   "clerk": {
-    "stub": "Clerk dashboard — coming in the next commit."
+    "eyebrow": "Biller's view",
+    "title": "Clerk dashboard",
+    "subtitle": "Create a payable request, copy the link, and watch the lifecycle in real time. State is in-process and resets on cold start — this is a demo, not a billing system.",
+    "listTitle": "Recent requests",
+    "listCount": "{count, plural, =0 {0 requests} one {1 request} other {# requests}}",
+    "empty": "No requests yet.",
+    "emptyHint": "Create one with the form on the right, or try a preset.",
+    "form": {
+      "title": "New request",
+      "presetsLabel": "Try:",
+      "externalRef": "External reference",
+      "externalRefHint": "Your case, ticket, or invoice number.",
+      "amount": "Amount",
+      "amountHint": "Demo limit $100,000.",
+      "description": "Description",
+      "descriptionHint": "Visible to the payer on the pay page.",
+      "payerPhone": "Payer phone",
+      "payerPhoneHint": "Used to mock SMS delivery.",
+      "payerEmail": "Payer email",
+      "payerEmailHint": "Used to mock email delivery. Provide at least one.",
+      "submit": "Create request",
+      "reset": "Reset",
+      "errorAmountInvalid": "Enter an amount like 125.00",
+      "createdTitle": "Request created. Pay link ready.",
+      "createdHint": "Copy the URL to send via your SMS gateway or email, or open it now to preview the payer flow.",
+      "copyLink": "Copy",
+      "copiedLink": "Copied",
+      "openLink": "Open"
+    },
+    "detail": {
+      "backToList": "Back to list",
+      "statusHint": "Current status: {tone}",
+      "timelineTitle": "Event timeline",
+      "timelineHint": "Newest at the bottom",
+      "payLinkTitle": "Pay link",
+      "payLinkHint": "Signed single-use URL. Anyone with this link can pay this exact amount for this exact reference, once.",
+      "copyLink": "Copy",
+      "copiedLink": "Copied",
+      "openLink": "Open the payer view",
+      "detailsTitle": "Details",
+      "payerPhone": "Payer phone",
+      "payerEmail": "Payer email",
+      "payerBank": "Payer bank",
+      "confirmation": "Confirmation",
+      "created": "Created",
+      "expires": "Expires",
+      "paidAt": "Paid at",
+      "cancel": "Cancel request",
+      "cancelConfirm": "Cancel this request? The payer's link will stop working."
+    }
   },
   "pay": {
     "stub": "Citizen pay-by-link page — coming in the next commit."
