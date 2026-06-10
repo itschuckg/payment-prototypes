@@ -16,8 +16,9 @@ An interactive, vendor-neutral showcase of Canadian municipal payment patterns.
 - Next.js 16 (App Router) + React 19 + TypeScript
 - Tailwind CSS v4
 - `next-intl` for i18n with `[locale]` segment routing
-- `better-sqlite3` for local persistence of mock request + event state
+- In-process state (Map + EventEmitter) — ephemeral by design; resets per server cold start
 - `zod` for input validation
+- Target host: Azure Static Web Apps (Standard tier, Canada region)
 
 ## Running locally
 
