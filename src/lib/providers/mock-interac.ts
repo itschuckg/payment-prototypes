@@ -101,6 +101,16 @@ export class MockInteracProvider implements PaymentProvider {
     if (r.status === "paid" || r.status === "expired" || r.status === "cancelled") {
       return r;
     }
+    if (now() > r.expiresAt) {
+      const expired: PaymentRequest = {
+        ...r,
+        status: "expired",
+        updatedAt: now(),
+      };
+      persist(expired);
+      emit(expired, "request.expired");
+      return expired;
+    }
     if (r.status === "viewed" || r.status === "authorizing") {
       return r;
     }

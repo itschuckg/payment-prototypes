@@ -58,7 +58,6 @@
     },
     "detail": {
       "backToList": "Back to list",
-      "statusHint": "Current status: {tone}",
       "timelineTitle": "Event timeline",
       "timelineHint": "Newest at the bottom",
       "payLinkTitle": "Pay link",
@@ -79,7 +78,44 @@
     }
   },
   "pay": {
-    "stub": "Citizen pay-by-link page — coming in the next commit."
+    "billerName": "Ville de Sainte-Démo · Municipal Court",
+    "dueNote": "Payable until {expires}",
+    "trustFootnote": "This pay link is signed and single-use. No card number is ever typed — you authorize from your own bank. Mocked for demonstration.",
+    "invalidTitle": "This link isn't valid",
+    "invalidBody": "The payment link is malformed or its signature doesn't check out. Ask the sender for a fresh link.",
+    "expiredTitle": "This link has expired",
+    "expiredBody": "The payment window for this request has closed. Contact the municipal office to get a new link.",
+    "goneTitle": "Request not found",
+    "goneBody": "This demo's state is ephemeral and resets on server restart. The link is signed correctly, but the request behind it no longer exists. Create a new one from the clerk dashboard.",
+    "cancelledTitle": "This request was cancelled",
+    "cancelledBody": "The clerk cancelled this payment request. Nothing is owed against this link.",
+    "alreadyPaidTitle": "Already paid — you're all set",
+    "alreadyPaidBody": "This bill was paid on {paidAt}. Confirmation number {confirmation}.",
+    "flow": {
+      "pickBankTitle": "Pay from your bank",
+      "pickBankHint": "Choose your financial institution. You'll authorize the payment there — this page never sees your credentials.",
+      "authorizeCta": "Authorize {amount} with {bank}",
+      "authorizeCtaDisabled": "Select your bank to continue",
+      "descriptionEcho": "Paying: {description}",
+      "authorizingTitle": "Waiting on {bank}…",
+      "authorizingSubtitle": "In the real flow, you'd approve this inside your banking app right now.",
+      "authorizingMockNote": "Mocked bank authorization — auto-approves in a moment",
+      "paidTitle": "Payment confirmed",
+      "paidSubtitle": "{amount} sent. The clerk's dashboard already shows it.",
+      "receiptConfirmation": "Confirmation",
+      "receiptPaidAt": "Paid at",
+      "receiptBank": "Bank",
+      "paidFootnote": "Keep the confirmation number. In the real flow, your bank also sends its own receipt.",
+      "errorHint": "Refresh the page to see the current state of this request.",
+      "error": {
+        "invalid-token": "This link isn't valid anymore",
+        "not-found": "Request not found — demo state may have reset",
+        "expired": "This request expired before payment completed",
+        "already-paid": "This bill was already paid",
+        "cancelled": "The clerk cancelled this request",
+        "declined": "The bank declined this payment"
+      }
+    }
   },
   "trust": {
     "stub": "Trust & compliance landscape — coming in the next commit."

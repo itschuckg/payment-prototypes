@@ -4,12 +4,7 @@ import { notFound } from "next/navigation";
 import { ArrowLeft, CircleCheck, CircleDot } from "lucide-react";
 import { getProvider } from "@/lib/providers/mock-interac";
 import { signPayLink } from "@/lib/tokens";
-import {
-  formatAmount,
-  formatExactTime,
-  formatRelative,
-  statusTheme,
-} from "@/lib/format";
+import { formatAmount, formatExactTime, formatRelative } from "@/lib/format";
 import { StatusBadge } from "@/components/StatusBadge";
 import { CopyButton } from "@/components/CopyButton";
 import { CancelButton } from "./_components/CancelButton";
@@ -81,9 +76,6 @@ export default async function ClerkRequestDetailPage({
           <h1 className="mt-2 text-2xl font-semibold tracking-tight text-[var(--color-ink)]">
             {request.description}
           </h1>
-          <p className="mt-1 text-xs text-[var(--color-ink-subtle)]">
-            {t("statusHint", { tone: statusTheme[request.status].tone })}
-          </p>
         </div>
         <div className="text-right">
           <p className="font-mono text-2xl font-semibold tracking-tight text-[var(--color-ink)]">
